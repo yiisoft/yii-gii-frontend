@@ -6,7 +6,7 @@ name: build yii-debug-frontend
 
 jobs:
   tests:
-    name: Node ${{ matrix.node-version }}-${{ matrix.os }}
+    name: Node ${{ matrix.node }}-${{ matrix.os }}
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -26,10 +26,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ matrix.node }}
 
       - name: Install Dependencies
         run: npm ci
