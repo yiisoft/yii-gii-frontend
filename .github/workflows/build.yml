@@ -15,7 +15,6 @@ jobs:
           - ubuntu-latest
 
         node-version:
-          - 14.20.x
           - 16.13.x
           - 18.10.x
           - lts
