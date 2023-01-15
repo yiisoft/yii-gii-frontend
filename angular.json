@@ -112,6 +112,6 @@
           }
         }
       }
-    }},
-  "defaultProject": "yii-gii-frontend"
+    }
+  }
 }
